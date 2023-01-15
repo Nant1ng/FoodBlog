@@ -8,8 +8,8 @@ function Logo(props: any) {
       <Image
         className="rounded-full object-cover"
         width={50}
-        height={50}
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjiELKhkgHcxEI_jZIIfJbHAR-USiRHMTGIQ&usqp=CAU"
+        height={25}
+        src="/FoodLogo.jpg"
         alt="logo"
       />
       {<>{renderDefault(props)}</>}
