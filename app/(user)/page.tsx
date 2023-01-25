@@ -12,6 +12,8 @@ const query = groq`
   categories[]->
 } | order(_createdAt desc)`;
 
+export const revalidate = 1800; // Revalidate this page every 30min
+
 export default async function HomePage() {
   if (previewData()) {
     return (
