@@ -41,7 +41,7 @@ async function Post({ params: { slug } }: Props) {
 
   return (
     <article className="px-10 pb-28">
-      <section className="space-y-2 border border-[#6b0a7f] text-white">
+      <section className="space-y-2 border border-gray-200 text-white">
         <div className="relative min-h-56 flex flex-col md:flex-row justify-between">
           <div className="absolute top-0 w-full h-full opacity-10 blur-sm p-10">
             <Image
@@ -51,7 +51,7 @@ async function Post({ params: { slug } }: Props) {
               fill
             />
           </div>
-          <section className="p-5 bg-[#6b0a7f] w-full">
+          <section className="p-5 bg-black w-full">
             <div className="flex flex-col md:flex-row justify-between gap-y-5">
               <div>
                 <h1 className="text-4xl font-extrabold">{post.title}</h1>
@@ -83,7 +83,7 @@ async function Post({ params: { slug } }: Props) {
                 {post.categories.map((category) => (
                   <p
                     key={category._id}
-                    className="bg-gray-800 text-white px-3 py-1 rounded-full text-sm font-semibold mt-4"
+                    className="bg-[#6b0a7f] text-white px-3 py-1 rounded-full text-sm font-semibold mt-4"
                   >
                     {category.title}
                   </p>
