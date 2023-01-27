@@ -14,9 +14,6 @@ function Header() {
         />
         <h1>Blog</h1>
       </Link>
-      <div>
-        <h1> Btn till github? </h1>
-      </div>
     </header>
   );
 }
